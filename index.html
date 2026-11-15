@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>End-User Licence Agreement: Receipt Capture Tool</title>
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1d2327;
+    --muted: #5b646b;
+    --rule: #d9d6cd;
+    --mark: #fff0a8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16191c;
+      --text: #e6e4de;
+      --muted: #9aa2a8;
+      --rule: #343a3f;
+      --mark: #5a4b00;
+    }
+  }
+  html { background: var(--bg); }
+  body {
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 3rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 1.0625rem/1.65 Georgia, "Times New Roman", serif;
+  }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 0.25rem; }
+  h2 { font-size: 1.1rem; margin: 2rem 0 0.4rem; }
+  p, ul { margin: 0.5rem 0; }
+  ul { padding-left: 1.25rem; }
+  .updated { color: var(--muted); margin-bottom: 2rem; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 1rem; }
+  mark { background: var(--mark); color: inherit; padding: 0 0.2em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>End-User Licence Agreement: Receipt Capture Tool</h1>
+  <p class="updated">Last updated: <mark>[date]</mark></p>
+
+  <h2>1. Who this applies to</h2>
+  <p>This agreement applies to staff of <mark>[firm legal name]</mark> ("the Firm") who use the Firm's internal receipt capture tool ("the Tool"). The Tool is not offered to the public or to clients.</p>
+
+  <h2>2. What the Tool does</h2>
+  <p>The Tool lets authorised staff send a photo of a receipt through Telegram. The image is read by an AI service (xAI), and the extracted details (vendor, date, amount, GST) are used to create an expense entry in a QuickBooks Online company file the user is authorised to access. It also reads account, vendor and tax code lists from that file to do this.</p>
+
+  <h2>3. Who may use it</h2>
+  <p>Only Firm staff who have been given access to the relevant QuickBooks company file, and who have the authority of the Firm and the client to use the Tool on that file. Users must check each entry before relying on it, as the AI reading of a receipt may contain errors.</p>
+
+  <h2>4. Services and where data goes</h2>
+  <p>To operate, the Tool passes receipt images and extracted data through the following services:</p>
+  <ul>
+    <li>n8n (workflow hosting, servers in Germany)</li>
+    <li>xAI (receipt reading, United States)</li>
+    <li>Telegram (receiving receipt photos)</li>
+    <li>Intuit QuickBooks Online (storing the expense entry)</li>
+  </ul>
+  <p>Data is handled in line with the Firm's Privacy Policy at <a href="https://nextaccounting.net.au/privacy-policy/">https://nextaccounting.net.au/privacy-policy/</a> and the terms of each service above.</p>
+
+  <h2>5. Acceptable use</h2>
+  <p>Users must not use the Tool to access client files without authority, or to process information they are not entitled to handle. Access may be removed at any time.</p>
+
+  <h2>6. No warranty</h2>
+  <p>The Tool is provided "as is". The Firm does not guarantee that it will be error-free or always available, and users remain responsible for the accuracy of the entries they rely on.</p>
+
+  <h2>7. Disconnecting</h2>
+  <p>Access to a QuickBooks company can be removed at any time by disconnecting the app from within QuickBooks, or by asking the Firm.</p>
+
+  <h2>8. Changes and contact</h2>
+  <p>The Firm may update this agreement from time to time. Questions can be sent to <mark>[contact email]</mark>.</p>
+
+  <h2>9. Governing law</h2>
+  <p>This agreement is governed by the laws of <mark>[State]</mark>, Australia.</p>
+
+  <hr>
+  <p class="updated">&copy; <mark>[firm legal name]</mark></p>
+</main>
+</body>
+</html>
